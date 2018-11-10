@@ -39,7 +39,34 @@ public class MainActivity extends AppCompatActivity {
                 if (cApple < 0 || cGrapes < 0 || cBanana < 0) {
                     Toast.makeText(getApplicationContext(), "item number can not be negative", Toast.LENGTH_SHORT).show();
                 } else {
-                    startActivity(new Intent(MainActivity.this, InvoiceActivity.class));
+
+                    Product pApple = new Product();
+                    pApple.setProductId(1);
+                    pApple.setProductName("Apple");
+                    pApple.setProductPrice(3);
+                    pApple.setProductQuantity(cApple);
+
+                    Product pGrapes = new Product();
+                    pGrapes.setProductId(2);
+                    pGrapes.setProductName("Grapes");
+                    pGrapes.setProductPrice(5);
+                    pGrapes.setProductQuantity(cGrapes);
+
+                    Product pBanana = new Product();
+                    pBanana.setProductId(3);
+                    pBanana.setProductName("Banana");
+                    pBanana.setProductPrice(4);
+                    pBanana.setProductQuantity(cBanana);
+
+                    Intent i = new Intent(getApplicationContext(), InvoiceActivity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putSerializable("apple", pApple);
+                    bundle.putSerializable("grapes", pGrapes);
+                    bundle.putSerializable("banana", pBanana);
+                    i.putExtras(bundle);
+                    startActivity(i);
+
+
                 }
             }
         });

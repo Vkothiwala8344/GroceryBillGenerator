@@ -22,34 +22,35 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Apple"
+            android:id="@+id/tv_product1_name"
             android:textSize="20dp" />
 
         <TextView
-            android:id="@+id/tv_count_apple"
+            android:id="@+id/tv_product1_count"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:text="0"
+            android:text=""
             android:textAlignment="center"
             android:textSize="35dp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tv_price_apple"
+            android:id="@+id/tv_product1_price"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:text="3"
+            android:text=""
             android:textAlignment="center"
             android:textSize="35dp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tv_tp_apple"
+            android:id="@+id/tv_product1_tprice"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:text="0"
+            android:text=""
             android:textAlignment="center"
             android:textSize="35dp"
             android:textStyle="bold" />
@@ -73,37 +74,38 @@
 
         <TextView
             android:layout_width="70dp"
+            android:id="@+id/tv_product2_name"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Grapes"
             android:textSize="20dp" />
 
         <TextView
-            android:id="@+id/tv_count_grapes"
+            android:id="@+id/tv_product2_count"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:text="0"
+            android:text=""
             android:textAlignment="center"
             android:textSize="35dp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tv_price_grapes"
+            android:id="@+id/tv_product2_price"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:text="5"
+            android:text=""
             android:textAlignment="center"
             android:textSize="35dp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tv_tp_grapes"
+            android:id="@+id/tv_product2_tprice"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:text="0"
+            android:text=""
             android:textAlignment="center"
             android:textSize="35dp"
             android:textStyle="bold" />
@@ -131,31 +133,31 @@
             android:textSize="20dp" />
 
         <TextView
-            android:id="@+id/tv_count_banana"
+            android:id="@+id/tv_product3_count"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:text="0"
+            android:text=""
             android:textAlignment="center"
             android:textSize="35dp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tv_price_banana"
+            android:id="@+id/tv_product3_price"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:text="4"
+            android:text=""
             android:textAlignment="center"
             android:textSize="35dp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tv_tp_banana"
+            android:id="@+id/tv_product3_tprice"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:text="0"
+            android:text=""
             android:textAlignment="center"
             android:textSize="35dp"
             android:textStyle="bold" />
@@ -179,11 +181,11 @@
             android:textSize="20dp" />
 
         <TextView
-            android:id="@+id/tv_tp"
+            android:id="@+id/tv_tprice"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:text="0"
+            android:text=""
             android:textAlignment="center"
             android:textSize="35dp"
             android:textStyle="bold" />
