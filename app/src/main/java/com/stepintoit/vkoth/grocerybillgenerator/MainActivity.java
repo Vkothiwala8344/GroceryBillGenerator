@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void display(int number) {
         TextView displayInteger = (TextView) findViewById(
-                R.id.integer_number);
+                R.id.tv_count_apple);
         displayInteger.setText("" + number);
     }
 }
