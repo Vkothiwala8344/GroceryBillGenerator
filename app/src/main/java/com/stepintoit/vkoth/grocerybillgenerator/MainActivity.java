@@ -122,4 +122,25 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putInt("appleCount",cApple);
+        outState.putInt("grapesCount",cGrapes);
+        outState.putInt("bananaCount",cBanana);
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        int cApp,cGra,cBan;
+        cApp = savedInstanceState.getInt("appleCount");
+        cGra = savedInstanceState.getInt("grapesCount");
+        cBan = savedInstanceState.getInt("bananaCount");
+
+        tvCountApple.setText(Integer.toString(cApp));
+        tvCountGrapes.setText(Integer.toString(cGra));
+        tvCountBanana.setText(Integer.toString(cBan));
+
+        super.onRestoreInstanceState(savedInstanceState);
+    }
 }
