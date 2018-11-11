@@ -2,7 +2,8 @@
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/Black">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -27,6 +28,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Apple"
+                android:textColor="@color/colorPrimary"
                 android:textSize="20dp" />
 
             <Button
@@ -34,7 +36,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-
+                android:background="@drawable/btn_operation_background"
                 android:text="-" />
 
             <TextView
@@ -45,6 +47,7 @@
                 android:text="0"
                 android:textAlignment="center"
                 android:textSize="35dp"
+                android:textColor="@color/colorPrimary"
                 android:textStyle="bold" />
 
             <Button
@@ -52,7 +55,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-
+                android:background="@drawable/btn_operation_background"
                 android:text="+" />
         </LinearLayout>
 
@@ -76,6 +79,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Grapes"
+                android:textColor="@color/colorPrimary"
                 android:textSize="20dp" />
 
             <Button
@@ -83,7 +87,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-
+                android:background="@drawable/btn_operation_background"
                 android:text="-" />
 
             <TextView
@@ -94,6 +98,7 @@
                 android:text="0"
                 android:textAlignment="center"
                 android:textSize="35dp"
+                android:textColor="@color/colorPrimary"
                 android:textStyle="bold" />
 
             <Button
@@ -101,7 +106,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-
+                android:background="@drawable/btn_operation_background"
                 android:text="+" />
         </LinearLayout>
 
@@ -124,6 +129,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Banana"
+                android:textColor="@color/colorPrimary"
                 android:textSize="20dp" />
 
             <Button
@@ -131,7 +137,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-
+                android:background="@drawable/btn_operation_background"
                 android:text="-" />
 
             <TextView
@@ -142,6 +148,7 @@
                 android:text="0"
                 android:textAlignment="center"
                 android:textSize="35dp"
+                android:textColor="@color/colorPrimary"
                 android:textStyle="bold" />
 
             <Button
@@ -149,6 +156,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
+                android:background="@drawable/btn_operation_background"
 
                 android:text="+" />
         </LinearLayout>
@@ -160,6 +168,7 @@
             android:layout_below="@+id/layout_banana"
             android:layout_centerInParent="true"
             android:layout_marginTop="50dp"
+            android:background="@drawable/button_bg_rounded_corners"
             android:text="Submit" />
 
     </RelativeLayout>
