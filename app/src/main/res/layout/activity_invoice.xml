@@ -1,197 +1,203 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-    <LinearLayout
-        android:id="@+id/layout_apple"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:gravity="center"
-        android:orientation="horizontal">
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/apple" />
 
-        <TextView
-            android:layout_width="70dp"
+        <LinearLayout
+            android:id="@+id/layout_apple"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Apple"
-            android:id="@+id/tv_product1_name"
-            android:textSize="20dp" />
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/tv_product1_count"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:text=""
-            android:textAlignment="center"
-            android:textSize="35dp"
-            android:textStyle="bold" />
+            <ImageView
+                android:layout_width="@dimen/image_size"
+                android:layout_height="@dimen/image_size"
+                android:src="@drawable/apple" />
 
-        <TextView
-            android:id="@+id/tv_product1_price"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:text=""
-            android:textAlignment="center"
-            android:textSize="35dp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_product1_name"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Apple"
+                android:textSize="20dp" />
 
-        <TextView
-            android:id="@+id/tv_product1_tprice"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:text=""
-            android:textAlignment="center"
-            android:textSize="35dp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_product1_count"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_product1_price"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_product1_tprice"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:textStyle="bold" />
 
 
-    </LinearLayout>
+        </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/layout_grapes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/layout_apple"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/grapes" />
-
-        <TextView
-            android:layout_width="70dp"
-            android:id="@+id/tv_product2_name"
+        <LinearLayout
+            android:id="@+id/layout_grapes"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Grapes"
-            android:textSize="20dp" />
+            android:layout_below="@+id/layout_apple"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/tv_product2_count"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:text=""
-            android:textAlignment="center"
-            android:textSize="35dp"
-            android:textStyle="bold" />
+            <ImageView
+                android:layout_width="@dimen/image_size"
+                android:layout_height="@dimen/image_size"
+                android:src="@drawable/grapes" />
 
-        <TextView
-            android:id="@+id/tv_product2_price"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:text=""
-            android:textAlignment="center"
-            android:textSize="35dp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_product2_name"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Grapes"
+                android:textSize="20dp" />
 
-        <TextView
-            android:id="@+id/tv_product2_tprice"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:text=""
-            android:textAlignment="center"
-            android:textSize="35dp"
-            android:textStyle="bold" />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/tv_product2_count"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:textStyle="bold" />
 
-    <LinearLayout
-        android:id="@+id/layout_banana"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/layout_grapes"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_product2_price"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:textStyle="bold" />
 
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/banana" />
+            <TextView
+                android:id="@+id/tv_product2_tprice"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
-        <TextView
-            android:layout_width="70dp"
+        <LinearLayout
+            android:id="@+id/layout_banana"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Banana"
-            android:textSize="20dp" />
+            android:layout_below="@+id/layout_grapes"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/tv_product3_count"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:text=""
-            android:textAlignment="center"
-            android:textSize="35dp"
-            android:textStyle="bold" />
+            <ImageView
+                android:layout_width="@dimen/image_size"
+                android:layout_height="@dimen/image_size"
+                android:src="@drawable/banana" />
 
-        <TextView
-            android:id="@+id/tv_product3_price"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:text=""
-            android:textAlignment="center"
-            android:textSize="35dp"
-            android:textStyle="bold" />
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Banana"
+                android:textSize="20dp" />
 
-        <TextView
-            android:id="@+id/tv_product3_tprice"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:text=""
-            android:textAlignment="center"
-            android:textSize="35dp"
-            android:textStyle="bold" />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/tv_product3_count"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:textStyle="bold" />
 
-    <LinearLayout
-        android:id="@+id/layout_totalprice"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/layout_banana"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_product3_price"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:textStyle="bold" />
 
+            <TextView
+                android:id="@+id/tv_product3_tprice"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
-        <TextView
-            android:layout_width="70dp"
+        <LinearLayout
+            android:id="@+id/layout_totalprice"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Total"
-            android:textSize="20dp" />
-
-        <TextView
-            android:id="@+id/tv_tprice"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:text=""
-            android:textAlignment="center"
-            android:textSize="35dp"
-            android:textStyle="bold" />
+            android:layout_below="@+id/layout_banana"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Total"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tv_tprice"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:textStyle="bold" />
 
 
-</RelativeLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

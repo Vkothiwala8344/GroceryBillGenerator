@@ -10,6 +10,10 @@ import butterknife.ButterKnife;
 
 public class InvoiceActivity extends AppCompatActivity {
 
+    static final String KEY_APPLE = "apple";
+    static  final String KEY_GRAPES = "grapes";
+    static final String KEY_BANANA = "banana";
+
     @BindView(R.id.tv_product1_count)
     TextView tvProduct1Count;
     @BindView(R.id.tv_product1_price)
@@ -45,17 +49,17 @@ public class InvoiceActivity extends AppCompatActivity {
     }
 
     void showProductInformation() {
-        Product productApple = (Product) getIntent().getSerializableExtra("apple");
+        Product productApple = (Product) getIntent().getSerializableExtra(KEY_APPLE);
         tvProduct1Count.setText(Integer.toString(productApple.getProductQuantity()));
         tvProduct1Price.setText(Integer.toString(productApple.getProductPrice()));
         tvProduct1TotalPrice.setText(Integer.toString(productApple.getProductQuantity() * productApple.getProductPrice()));
 
-        Product productGrapes = (Product) getIntent().getSerializableExtra("grapes");
+        Product productGrapes = (Product) getIntent().getSerializableExtra(KEY_GRAPES);
         tvProduct2Count.setText(Integer.toString(productGrapes.getProductQuantity()));
         tvProduct2Price.setText(Integer.toString(productGrapes.getProductPrice()));
         tvProduct2TotalPrice.setText(Integer.toString(productGrapes.getProductQuantity() * productGrapes.getProductPrice()));
 
-        Product productBanana = (Product) getIntent().getSerializableExtra("banana");
+        Product productBanana = (Product) getIntent().getSerializableExtra(KEY_BANANA);
         tvProduct3Count.setText(Integer.toString(productBanana.getProductQuantity()));
         tvProduct3Price.setText(Integer.toString(productBanana.getProductPrice()));
         tvProduct3TotalPrice.setText(Integer.toString(productBanana.getProductQuantity() * productBanana.getProductPrice()));

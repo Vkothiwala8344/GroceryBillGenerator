@@ -1,161 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/layout_apple"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:gravity="center"
-        android:orientation="horizontal">
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/apple" />
 
-        <TextView
-            android:layout_width="70dp"
+        <LinearLayout
+            android:id="@+id/layout_apple"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Apple"
-            android:textSize="20dp" />
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btn_decrease_apple"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
+            <ImageView
+                android:layout_width="@dimen/image_size"
+                android:layout_height="@dimen/image_size"
+                android:src="@drawable/apple" />
 
-            android:text="-" />
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Apple"
+                android:textSize="20dp" />
 
-        <TextView
-            android:id="@+id/tv_count_apple"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:text="0"
-            android:textAlignment="center"
-            android:textSize="35dp"
-            android:textStyle="bold" />
+            <Button
+                android:id="@+id/btn_decrease_apple"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
 
-        <Button
-            android:id="@+id/btn_increase_apple"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
+                android:text="-" />
 
-            android:text="+" />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/tv_count_apple"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:textStyle="bold" />
 
-    <LinearLayout
-        android:id="@+id/layout_grapes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/layout_apple"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_increase_apple"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
 
-        <ImageView
-            android:layout_width="@dimen/image_size"
-            android:layout_height="60dp"
-            android:src="@drawable/grapes" />
+                android:text="+" />
+        </LinearLayout>
 
-        <TextView
-            android:layout_width="70dp"
+
+        <LinearLayout
+            android:id="@+id/layout_grapes"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Grapes"
-            android:textSize="20dp" />
+            android:layout_below="@+id/layout_apple"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btn_decrease_grapes"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
+            <ImageView
+                android:layout_width="@dimen/image_size"
+                android:layout_height="@dimen/image_size"
+                android:src="@drawable/grapes" />
 
-            android:text="-" />
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Grapes"
+                android:textSize="20dp" />
 
-        <TextView
-            android:id="@+id/tv_count_grapes"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:text="0"
-            android:textAlignment="center"
-            android:textSize="35dp"
-            android:textStyle="bold" />
+            <Button
+                android:id="@+id/btn_decrease_grapes"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
 
-        <Button
-            android:id="@+id/btn_increase_grapes"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
+                android:text="-" />
 
-            android:text="+" />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/tv_count_grapes"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:textStyle="bold" />
 
-    <LinearLayout
-        android:id="@+id/layout_banana"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/layout_grapes"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_increase_grapes"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
 
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/banana" />
+                android:text="+" />
+        </LinearLayout>
 
-        <TextView
-            android:layout_width="70dp"
+        <LinearLayout
+            android:id="@+id/layout_banana"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Banana"
-            android:textSize="20dp" />
+            android:layout_below="@+id/layout_grapes"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/image_size"
+                android:layout_height="@dimen/image_size"
+                android:src="@drawable/banana" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Banana"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn_decrease_banana"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/tv_count_banana"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_increase_banana"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+
+                android:text="+" />
+        </LinearLayout>
 
         <Button
-            android:id="@+id/btn_decrease_banana"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_banana"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
+            android:text="Submit" />
 
-            android:text="-" />
-
-        <TextView
-            android:id="@+id/tv_count_banana"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:text="0"
-            android:textAlignment="center"
-            android:textSize="35dp"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/btn_increase_banana"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-
-            android:text="+" />
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/btn_submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/layout_banana"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="50dp"
-        android:text="Submit" />
-
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

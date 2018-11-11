@@ -15,6 +15,17 @@ import butterknife.OnClick;
 public class MainActivity extends AppCompatActivity {
 
     static int cApple = 0, cGrapes = 0, cBanana = 0;
+    static final String KEY_APPLE = "apple";
+    static  final String KEY_GRAPES = "grapes";
+    static final String KEY_BANANA = "banana";
+
+    static  final String PRODUCT1_NAME = "apple";
+    static  final String PRODUCT2_NAME = "grapes";
+    static  final String PRODUCT3_NAME = "banana";
+
+    static final int PRODUCT1_PRICE = 3;
+    static final int PRODUCT2_PRICE = 5;
+    static final int PRODUCT3_PRICE = 4;
 
     @BindView(R.id.btn_increase_apple)
     Button btnIncrApple;
@@ -114,29 +125,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void openInvoicePage() {
-        Product pApple = new Product();
-        pApple.setProductId(1);
-        pApple.setProductName("Apple");
-        pApple.setProductPrice(3);
-        pApple.setProductQuantity(cApple);
-
-        Product pGrapes = new Product();
-        pGrapes.setProductId(2);
-        pGrapes.setProductName("Grapes");
-        pGrapes.setProductPrice(5);
-        pGrapes.setProductQuantity(cGrapes);
-
-        Product pBanana = new Product();
-        pBanana.setProductId(3);
-        pBanana.setProductName("Banana");
-        pBanana.setProductPrice(4);
-        pBanana.setProductQuantity(cBanana);
+        Product pApple = new Product(1,PRODUCT1_NAME,cApple,PRODUCT1_PRICE);
+        Product pGrapes = new Product(2,PRODUCT2_NAME,cGrapes,PRODUCT2_PRICE);
+        Product pBanana = new Product(3,PRODUCT3_NAME,cBanana,PRODUCT3_PRICE);
 
         Intent i = new Intent(getApplicationContext(), InvoiceActivity.class);
         Bundle bundle = new Bundle();
-        bundle.putSerializable("apple", pApple);
-        bundle.putSerializable("grapes", pGrapes);
-        bundle.putSerializable("banana", pBanana);
+        bundle.putSerializable(KEY_APPLE, pApple);
+        bundle.putSerializable(KEY_GRAPES, pGrapes);
+        bundle.putSerializable(KEY_BANANA, pBanana);
         i.putExtras(bundle);
         startActivity(i);
 
