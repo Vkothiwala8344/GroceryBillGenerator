@@ -27,10 +27,10 @@ public class MainActivity extends AppCompatActivity {
     static final int PRODUCT2_PRICE = 5;
     static final int PRODUCT3_PRICE = 4;
 
-//    @BindView(R.id.btn_increase_apple)
-//    Button btnIncrApple;
-//    @BindView(R.id.btn_decrease_apple)
-//    Button btnDecrApple;
+    @BindView(R.id.btn_increase_apple)
+    Button btnIncrApple;
+    @BindView(R.id.btn_decrease_apple)
+    Button btnDecrApple;
     @BindView(R.id.btn_increase_grapes)
     Button btnIncrGrapes;
     @BindView(R.id.btn_decrease_grapes)
@@ -42,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.btn_submit)
     Button btnSubmit;
 
-//    @BindView(R.id.tv_count_apple)
-//    TextView tvCountApple;
+    @BindView(R.id.tv_count_apple)
+    TextView tvCountApple;
     @BindView(R.id.tv_count_grapes)
     TextView tvCountGrapes;
     @BindView(R.id.tv_count_banana)
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         cGra = savedInstanceState.getInt("grapesCount");
         cBan = savedInstanceState.getInt("bananaCount");
 
-//        tvCountApple.setText(Integer.toString(cApp));
+        tvCountApple.setText(Integer.toString(cApp));
         tvCountGrapes.setText(Integer.toString(cGra));
         tvCountBanana.setText(Integer.toString(cBan));
 
@@ -88,17 +88,17 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-//    @OnClick(R.id.btn_increase_apple)
-//    void onClickAppleIncrease() {
-//        cApple++;
-//        tvCountApple.setText(Integer.toString(cApple));
-//    }
-//
-//    @OnClick(R.id.btn_decrease_apple)
-//    void onClickAppleDecrease() {
-//        cApple--;
-//        tvCountApple.setText(Integer.toString(cApple));
-//    }
+    @OnClick(R.id.btn_increase_apple)
+    void onClickAppleIncrease() {
+        cApple++;
+        tvCountApple.setText(Integer.toString(cApple));
+    }
+
+    @OnClick(R.id.btn_decrease_apple)
+    void onClickAppleDecrease() {
+        cApple--;
+        tvCountApple.setText(Integer.toString(cApple));
+    }
 
     @OnClick(R.id.btn_increase_grapes)
     void onClickGrapesIncrease() {
